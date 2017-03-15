@@ -16,7 +16,7 @@ public class Exercise_04 {
 
          System.out.println("a", "a*2", "a*4");
          for (int i = 1; i <= 4; i++) {
-         //    System.out.printf(...);
+         //    System.out.println(...);
          }
      }
 }
