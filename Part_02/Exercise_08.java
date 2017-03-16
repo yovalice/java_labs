@@ -10,6 +10,6 @@ import java.util.Scanner;
  *      exit the loop and print the number to the console.
  *
  */
-public class Exersice_08 {
+public class Exercise_08 {
 
 }

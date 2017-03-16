@@ -11,6 +11,6 @@ import java.util.Scanner;
  *      For this exercise each year has 365 days.
  *
  */
-public class Exersice_07 {
+public class Exercise_07 {
 
 }

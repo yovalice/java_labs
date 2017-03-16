@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  *
  */
-public class Exersice_05 {
+public class Exercise_05 {
 
     public static void main(String[] args) {
 
