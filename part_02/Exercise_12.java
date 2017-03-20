@@ -3,7 +3,7 @@ package Part_02;
 import java.util.Scanner;
 
 /**
- * Part 2 Exercise 23: - ryan
+ * Part 2 Exercise 12:
  *
  *
  *      Receive the following arguments from the user:

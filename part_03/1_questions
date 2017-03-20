@@ -1,0 +1,42 @@
+
+Answer the following questions
+
+
+1) What is an instance variable?
+
+2) How do you create a new object?
+
+3) After creating a new object, how do you set that objects instance variables?
+
+4) What is a reference variable? Why do you need to be careful with reference variables?
+
+5) How many methods can you have in a class?
+
+6) How do you exit a method at any point?
+
+7) What is the method signature required to return an "int" from a method?
+
+8) Assuming "int num = 10", what is the syntax to return "num" from a method?
+
+9) How do you pass a parameter to a method?
+
+10) What is the method signature for a method named sum() that takes two int parameters
+    and returns their sum as in int?
+
+11) What is a constructor?
+
+12) How does Java treat a class without a constructor?
+
+13) What would the constructor for "public class Animal" look like?
+
+14) What is the effect of passing parameters to a constructor?
+
+15) When should you pass parameters to a constructor?
+
+16) What does the finalize() method do?
+
+17) What does the "this" keyword do?
+
+18) When should you use the "this" keyword?
+
+19) Write an example of the "this" keyword in action.
