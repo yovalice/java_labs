@@ -12,9 +12,10 @@ class Exercise_03 {
 
 //    public static void main(String[] strings) {
 //
-//        // Generate a random int between >= 1 and <= 12
+//
 //
 //        // use a for loop to iterate 1000 times {
+//            // Generate a random int between >= 1 and <= 12
 //            // call getMonthName(int month) and pass your random int
 //            // print the name of the month and the random int generated to the console
 //          }
