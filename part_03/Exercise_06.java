@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 class Exercise_06 {
 
+    // the goal of this method is to print out the local time in any given timezone
     public static void main(String[] strings) {
 
         Scanner input = new Scanner(System.in);
