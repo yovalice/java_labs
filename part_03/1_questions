@@ -1,0 +1,111 @@
+
+Answer the following questions
+
+
+1) What is an instance variable?
+
+    An instance variable is a variable defined in a class.
+
+2) How do you create a new object?
+
+    MyCounter counter = new MyCounter();
+
+3) After creating a new object, how do you set that objects instance variables?
+
+    You can set them manually using a sequence of statements:
+
+        minivan.passegers = 7;
+
+     or you can use a constructor:
+
+        class MyClass {
+            int x;
+
+        MyClass() {
+            x = 10;
+            }
+          }
+
+4) What is a reference variable? Why do you need to be careful with reference variables?
+
+    It is a variable whose type is an object type.
+    Because you are changing the object that the reference variables refers to.
+
+5) How many methods can you have in a class?
+
+    One or more
+
+6) How do you exit a method at any point?
+
+    return
+
+7) What is the method signature required to return an "int" from a method?
+
+   int range () {} - This is a method with a int return value.
+   return value;
+
+8) Assuming "int num = 10", what is the syntax to return "num" from a method?
+
+    int range () {
+        return 10;
+     }
+
+9) How do you pass a parameter to a method?
+
+     range(x, y);
+
+10) What is the method signature for a method named sum() that takes two int parameters
+    and returns their sum as in int?
+
+    int sum(int x, int y){
+        return x + y;
+    }
+
+11) What is a constructor?
+
+    An constructor initializes an object when it is created.
+
+12) How does Java treat a class without a constructor?
+
+    Java automatically provides a default constructor that initializes all member variables to their defaults values
+    which is zero, null or false, for the numeric types, reference types, and booleans, respectively.
+
+13) What would the constructor for "public class Animal" look like?
+
+    class Animal{}
+
+        Animal() {
+
+        }
+
+        Animal animalx = new Animal;
+
+14) What is the effect of passing parameters to a constructor?
+
+
+
+15) When should you pass parameters to a constructor?
+
+    When you need to overwrite the initials values of the constructor
+
+16) What does the finalize() method do?
+
+    Ensures that an object terminates cleanly.
+
+17) What does the "this" keyword do?
+
+    Permits the name of a parameter or local variable to be the same as the name of an instance variable.
+
+18) When should you use the "this" keyword?
+
+    When you need to call the object of a constructor the same as an instance variable as a reference.
+
+19) Write an example of the "this" keyword in action.
+
+    class Animal {}
+        int weight;
+
+        Animal(int weight) {
+            this.weight = weight;
+
+        }
