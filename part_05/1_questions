@@ -1,0 +1,62 @@
+
+Answer the following:
+
+1) What are the access control modifiers (acm) provided in Java?
+
+2) Briefly explain each acm and how they differentiate from each other?
+
+3) Why do we use acm's?
+
+4) What is the risk of not using acm's?
+
+5) Write a method signature that receives an object of type "Car" as a parameter.
+
+6) Write a method signature that returns an object of type "Car".
+
+7) What is a very important consideration to keep in mind when passing objects (hint: by reference) from one
+method to another?
+
+8) What is method overloading?
+
+9) Why is method overloading useful? (Hint: as compared to the implementation in the C language.)
+
+10) How do you overload a method? What signifies that a method is being overloaded?
+
+11) Below, by writing just the method signature, demonstrate overloading a method 3 times.
+
+12) How do you overload a constructor? What signifies that a constructor is being overloaded?
+
+13) Why do we overload constructors?
+
+14) Below, by writing just the constructor signature, demonstrate overloading a constructor 3 times.
+
+15) What is recursion?
+
+16) What important considerations must you keep in mind when using recursion?
+
+17) How do you make a method recursive?
+
+18) How do you escape a recursive method?
+
+19) Explain what "static" is all about?
+
+20) When should you use "static"?
+
+21) What differentiates static variables from instance variables?
+
+22) What is a the quicksort? Briefly describe how the quicksort works.
+
+23) What is a nested, or inner, class?
+
+24) What is the scope of a nested class?
+
+25) What is a variable-arity method?
+
+26) What makes a variable-arity method unique? When should you use it?
+
+27) What is the shorthand name for variable-arity?
+
+28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
+
+
+
