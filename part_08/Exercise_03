@@ -1,0 +1,37 @@
+
+Using MySQLWorkbench do the following
+
+1) create a new blank database with the name "car_dealership"
+
+2) create a new table named "clients" with the following fields:
+    - id (auto increment)
+    - userID (refers to "id" in users table)
+    - carID (refers to "id" in cars table)
+    - dealerID (refers to user in users table who is the car dealer)
+
+2) create a new table named "users" with the following fields
+    - id (auto increment)
+    - first name
+    - last name
+
+3) create a new table named "cars" with the following fields
+    - id (auto increment)
+    - make
+    - model
+    - color
+    - year
+
+4) populate these tables with at least 5 records each - the more the merrier
+
+5) Write the SQL queries to accomplish the following: (write each of your queries below for review)
+    - select all records from clients
+    - select all records from clients where car make = "Toyota"
+    - use a join to select all makes and models that a dealer has sold
+    - use a left join to select the first and last name of everyone who has bought a red car
+    - use an insert statement to create a new record in each table
+    - create a new table named "test" with at least two fields
+    - use sql to drop the the "test" table
+    - use sql to update a record in the "cars" table
+
+6) Using MySQLWorkbench, export the the "clients", "users" and "cars" schema with all objects and data into a
+self-contained sql file. - check the exported file into git

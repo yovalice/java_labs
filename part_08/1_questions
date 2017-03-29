@@ -1,0 +1,29 @@
+
+1) Describe the exception hierarchy.
+
+2) What is a try/catch statement?
+
+3) Why do we use try/catch statements?
+
+4) Write a full example of a try/catch/finally statement that catches two distinct exceptions
+
+5) What does it mean to "throw" an exception? How does it work?
+
+6) What happens if your application encounters an exception and you don't catch it or throw it?
+
+7) When catching exception in an inheritance hierarchy, should you catch the subclass exception or the
+superclass exception first? Why?
+
+8) Write a nested try/catch statement.
+
+9) What does it mean to rethrow an exception?
+
+10) What are the 7 methods that come with the Throwable class?
+
+11) What does the "finally" block do?
+
+12) When is the finally block executed? Will it ever not be executed?
+
+13) What are the three recently added features to Java exceptions?
+
+

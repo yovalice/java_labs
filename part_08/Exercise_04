@@ -1,0 +1,13 @@
+
+Using Mysql shell do the following: write down each command you execute below for review.
+
+- connect to your mysql via command line
+- select a database to use
+- select * from clients
+- select * from users
+- select * from cars
+- use a join query against at least two tables
+- create a backup dump file for your car_dealership database
+- create a new database named car_dealership_2 and use the dump file from previous question to populate (restore)
+ car_dealership_2 so that it is a direct copy of car_dealership
+
