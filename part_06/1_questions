@@ -1,0 +1,54 @@
+
+1) What is Java inheritance?
+
+    Allows the creation of hierarchical classification.
+
+2) How does inheritance work?
+
+    Is a general class that defines common traits to a set of related items.
+    This class can then be inherited by other, more specific classes.
+    The keyword for this is extends.
+
+3) What are some advantages that inheritance provides?
+
+    Is that once you have created a superclass that defines the attributes common to a
+    set of objects, it can be used to create any number of more specific subclases.
+
+4) What does the "super" keyword do?
+
+    It calls the superclass constructor
+
+5) In what order are constructors called when there are multiple subclasses?
+
+    From the superclass to the last subclass.
+
+6) What does it mean when a method is overridden?
+
+    Is when a subclass method has the same return type and signature as a method in its superclass,
+    then the method in the subclass is said to override the method in the superclass.
+
+7) How do overridden methods support polymorphism?
+
+    Because it forms the basic for dynamic dispatch and this is how Java implements run-time polymorphism.
+    I allows a general class to specify methods that will be common to all of its derivatives, while
+    allowing subclasses to define the specific implementation of some or all those methods.
+    One interface, multiple meyhods.
+
+8) What is the difference between an overloaded method and an overridden method?
+
+    In overloaded methods just the one method that has the same parameter that the onject
+    created will be used. It scanned for the best match. In overridden method, one method will
+    override the other.
+
+9) What is dynamic method dispatch?
+
+    Is the mechanism by which a call to an overridden method is resolved at run time rather than compile time.
+
+10) What does the "final" keyword do?
+
+    Prevents a method from being overridden or a class from being inherited.
+
+11) Are classes in Java are a subclass of what super class?
+
+    The object class.
+
