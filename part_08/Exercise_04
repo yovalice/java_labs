@@ -2,7 +2,7 @@
 Using Mysql shell do the following: write down each command you execute below for review.
 
 - restore (populate) the sample employees database as illustrated here:
-https://dev.mysql.com/doc/refman/5.7/en/mysqldump-sql-format.html
+https://dev.mysql.com/doc/employee/en/employees-installation.html
 - connect to your mysql via command line
 - select a database to use
 - run a variety of select queries against the various tables in employees db
