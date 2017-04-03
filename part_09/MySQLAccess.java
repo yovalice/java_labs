@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class MySQLAccess {
-    private Connection connect = null;
+    private Connection connection = null;
     private Statement statement = null;
     private PreparedStatement preparedStatement = null;
     private ResultSet resultSet = null;
@@ -16,59 +16,59 @@ public class MySQLAccess {
     public static void main(String[] args) {
         MySQLAccess example = new MySQLAccess();
         try {
-            example.readDataBase();
+            example.readDataBase(args[0], args[1], Integer.parseInt(args[2]), args[3]);
         } catch (Exception e){
             System.out.println("error in readDateBase()" + e.getMessage());
             System.out.println(e.getStackTrace());
         }
     }
 
-    public void readDataBase() throws Exception {
+    public void readDataBase(String course_name, String desc, int credits, String department)
+            throws Exception {
         try {
             // This will load the MySQL driver, each DB has its own driver
             Class.forName("com.mysql.jdbc.Driver");
             // Setup the connection with the DB
-            connect = DriverManager
-                    .getConnection("jdbc:mysql://localhost/college?"
-                            + "user=<ryan>&password=<password>");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/college?" +
+                    "user=ryan&password=CodingNomadsFoEva!&useSSL=false");
 
 
             // Statements allow to issue SQL queries to the database
-            statement = connect.createStatement();
+            statement = connection.createStatement();
+
             // Result set get the result of the SQL query
-            resultSet = statement
-                    .executeQuery("select * from college.courses;");
+            resultSet = statement.executeQuery("select * from college.courses;");
 
             writeResultSet(resultSet);
 
             // PreparedStatements can use variables and are more efficient
-            preparedStatement = connect
+            preparedStatement = connection
                     .prepareStatement("insert into  college.courses (course_name, description, credits, department) " +
                             "values (?, ?, ?, ?)");
             // Parameters start with 1
-            preparedStatement.setString(1, "Database Design");
-            preparedStatement.setString(2, "Introduction to Databases using MySQL");
-            preparedStatement.setInt(3, 3);
-            preparedStatement.setString(4, "Computer Science");
+            preparedStatement.setString(1, course_name);
+            preparedStatement.setString(2, desc);
+            preparedStatement.setInt(3, credits);
+            preparedStatement.setString(4, department);
             preparedStatement.executeUpdate();
 
 
-            preparedStatement = connect
-                    .prepareStatement("SELECT course_name, description, credits, department  from college.courses");
+            preparedStatement = connection
+                    .prepareStatement("SELECT course_name, description, credits, department from college.courses");
             resultSet = preparedStatement.executeQuery();
+
             writeResultSet(resultSet);
 
+
             // Remove again the insert comment
-            preparedStatement = connect
-                    .prepareStatement("delete from college.courses where course_name = ? ; ");
-            preparedStatement.setString(1, "Database Design");
-            preparedStatement.executeUpdate();
+//            preparedStatement = connection
+//                    .prepareStatement("delete from college.courses where course_name = ? ; ");
+//            preparedStatement.setString(1, "Database Design");
+//            preparedStatement.executeUpdate();
 
-            resultSet = statement
-                    .executeQuery("select * from college.courses");
+            resultSet = statement.executeQuery("select * from college.courses");
+
             writeMetaData(resultSet);
-
-
 
         } catch (Exception e) {
             throw e;
@@ -107,6 +107,8 @@ public class MySQLAccess {
             System.out.println("Credits: " + credits);
             System.out.println("Department: " + department);
             System.out.println("---------------------------------");
+            System.out.println("---------------------------------");
+
         }
     }
 
@@ -121,8 +123,8 @@ public class MySQLAccess {
                 statement.close();
             }
 
-            if (connect != null) {
-                connect.close();
+            if (connection != null) {
+                connection.close();
             }
         } catch (Exception e) {
 
